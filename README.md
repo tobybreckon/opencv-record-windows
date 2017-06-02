@@ -1,4 +1,4 @@
-#  Record OpenCV WIndows - Video Capture via HighGUI display windows (hack_
+#  Record OpenCV WIndows - Video Capture via HighGUI display windows _hack_
 
 Requires [OpenCV 3.x](http://www.opencv.org).
 
@@ -54,7 +54,7 @@ and  [OpenCV C examples](https://github.com/tobybreckon/c-examples-ipcv) reposit
 
 ---
 
-Click for YouTube video example recorded from this example applied to the [bilateral filter example]() shown on an old mobile phone video of a night-time crossing of Hong Kong harbour.
+Click for YouTube video example recorded from this example applied to the [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) shown on an old mobile phone video of an evening crossing of Hong Kong harbour.
 
 [![Example Video](http://img.youtube.com/vi/dFWRmQP9Y-A/0.jpg)](http://www.youtube.com/watch?v=dFWRmQP9Y-A)
 
