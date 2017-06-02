@@ -55,9 +55,22 @@ and  [OpenCV C examples](https://github.com/tobybreckon/c-examples-ipcv) reposit
 
 ---
 
-Click for YouTube video example recorded from this example applied to the [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) shown on an old mobile phone video of an evening crossing of Hong Kong harbour.
+Click for YouTube video example recorded from this example applied to the [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) shown on an old mobile phone video of an evening crossing of Hong Kong harbour [Fisher / Breckon et al., 2014](http://dx.doi.org/10.1002/9781119286462).
 
 [![Example Video](http://img.youtube.com/vi/dFWRmQP9Y-A/0.jpg)](http://www.youtube.com/watch?v=dFWRmQP9Y-A)
+
+Reference is:
+```
+@Book{fisher14dictionary,
+  author = 	 {Fisher, R.B. and Breckon, T.P. and Dawson-Howe, K. and Fitzgibbon, A. and Robertson, C. and Trucco, E. and Williams, C.K.I.},
+  title = 	 {Dictionary of Computer Vision and Image Processing},
+  publisher = 	 {Wiley},
+  year = 	 {2014},
+  edition =      {2nd},
+  isbn =         {9781119941866},
+  doi = 	 {10.1002/9781119286462}
+}
+```
 
 ---
 
