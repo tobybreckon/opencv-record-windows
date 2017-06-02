@@ -60,6 +60,6 @@ Click for YouTube video example recorded from this example applied to the [bilat
 
 ---
 
-If you find any bugs report them to me (or much better still submit a pull request, please) - toby.breckon@durham.ac.uk
+If you find any bugs report them to me (or much better still - submit a pull request, please) - toby.breckon@durham.ac.uk
 
 _"may the source be with you"_ - anon.
