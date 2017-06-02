@@ -1,6 +1,6 @@
 /**************************************************************************/
 
-// Record OpenCV Window Display to Movie File
+// Record OpenCV Image Display Windows to a Movie File
 // a.ka. a Video Capture via HighGUI display windows hack
 
 // automatically records highGUI windows defined with either of:
