@@ -1,0 +1,1 @@
+../cpp-examples-ipcv/bilateral_filter.cpp
