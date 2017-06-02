@@ -49,7 +49,7 @@ Originally developed to generate the video examples for the ebook version of:
  [Dictionary of Computer Vision and Image Processing](http://dx.doi.org/10.1002/9781119286462) (R.B. Fisher, T.P. Breckon, K. Dawson-Howe, A. Fitzgibbon, C. Robertson, E. Trucco, C.K.I. Williams), Wiley, 2014.
  [[Google Books](http://books.google.co.uk/books?id=TaEQAgAAQBAJ&lpg=PP1&dq=isbn%3A1118706811&pg=PP1v=onepage&q&f=false)] [[doi](http://dx.doi.org/10.1002/9781119286462)]
 
-based on the example computer vision and image processing code in my other [OpenCV C++ examples](https://github.com/tobybreckon/cpp-examples-ipcv)
+... based on the example computer vision and image processing code in my other [OpenCV C++ examples](https://github.com/tobybreckon/cpp-examples-ipcv)
 and  [OpenCV C examples](https://github.com/tobybreckon/c-examples-ipcv) repositories.
 
 ---
