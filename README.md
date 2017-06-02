@@ -2,6 +2,7 @@
 
 Requires [OpenCV 2.x / 3.x](http://www.opencv.org).
 Works with OpenCV C++ or (older) C style interface
+
 ---
 
 ```
