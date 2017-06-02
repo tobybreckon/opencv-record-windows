@@ -1,6 +1,7 @@
 /**************************************************************************/
 
-// Video Capture via HighGUI display windows hack - 2013
+// Record OpenCV Window Display to Movie File
+// a.ka. a Video Capture via HighGUI display windows hack
 
 // automatically records highGUI windows defined with either of:
 // namedWindow(), cvNamedWindow() provided all such windows
@@ -14,12 +15,11 @@
 // via namedWindowBlackList(windowName) (C++). Put these **directly** after
 // the corresponding namedWindow() or cvNamedWindow() call
 
-// Author : Toby Breckon, toby.breckon@cranfield.ac.uk
-
-// Copyright (c) 2013 School of Engineering, Cranfield University
+// Copyright (c) 2014 Toby Breckon, toby.breckon@durham.ac.uk
+// School of Engineering and Computing Sciences, Durham University
 // License : LGPL - http://www.gnu.org/licenses/lgpl.html
 
-/*  Usage example:
+/*   Usage example (see test.cpp, for instance):
 
 < ---- START/TOP OF FILE that includes main() / "main display loop"
 #include "opencv_record_output.h"
@@ -33,6 +33,8 @@ namedWindowBlackList("controls"); // a window we don't want / cannot capture
 cvNamedWindowBlackList("controls"); // as above but for OpenCV C interface
 .....
 < ---- END OF FILE "that's it, no other code changes needed.
+
+Defaults: output video is 1280x720 max. - see defs. in code below to change
 
 */
 
