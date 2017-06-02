@@ -1,7 +1,7 @@
 #  Record OpenCV WIndows - Video Capture via HighGUI display windows _hack_
 
-Requires [OpenCV 3.x](http://www.opencv.org).
-
+Requires [OpenCV 2.x / 3.x](http://www.opencv.org).
+Works with OpenCV C++ or (older) C style interface
 ---
 
 ```
