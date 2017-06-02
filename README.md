@@ -62,7 +62,9 @@ Click for YouTube video example recorded from this example applied to the [bilat
 Reference is:
 ```
 @Book{fisher14dictionary,
-  author = 	 {Fisher, R.B. and Breckon, T.P. and Dawson-Howe, K. and Fitzgibbon, A. and Robertson, C. and Trucco, E. and Williams, C.K.I.},
+  author = 	 {Fisher, R.B. and Breckon, T.P.
+              and Dawson-Howe, K. and Fitzgibbon, A.
+              and Robertson, C. and Trucco, E. and Williams, C.K.I.},
   title = 	 {Dictionary of Computer Vision and Image Processing},
   publisher = 	 {Wiley},
   year = 	 {2014},
