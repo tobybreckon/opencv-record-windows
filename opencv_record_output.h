@@ -10,7 +10,7 @@
 // Use: just include this header before all your code **including** the opencv
 // header (#include <cv.h>, #include <opencv2/...>) etc.
 
-// Windows to be recorded (or that are not updated) can be black-listed
+// Windows not to be recorded (or that are not updated) can be black-listed
 // via cvNamedWindowBlackList(windowName) (C) or
 // via namedWindowBlackList(windowName) (C++). Put these **directly** after
 // the corresponding namedWindow() or cvNamedWindow() call
