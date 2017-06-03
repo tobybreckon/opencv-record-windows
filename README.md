@@ -9,7 +9,7 @@ Works with OpenCV C++ or (older) C style interface
 // Record OpenCV Image Display Windows to a Movie File
 // a.ka. a Video Capture via HighGUI display windows hack
 
-// aut (see test.cpp, for instance)omatically records highGUI windows defined with either of:
+// automatically records highGUI windows defined with either of:
 // namedWindow(), cvNamedWindow() provided all such windows
 // are undated in the "main loop" via imshow() or cvShowImage().
 
