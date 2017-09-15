@@ -38,9 +38,23 @@ Defaults: output video is 1280x720 max. - see defs. in code below to change
 
 */
 
+#include "cv.h"         // open cv general include file
+
+#if (CV_MAJOR_VERSION > 2)
+
+// includes for OpenCV 3.x and onward
+
 #include "opencv2/videoio.hpp"
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
+
+#else
+
+// includes for older OpenCV 2.4.x
+
+#include "highgui.h"    // open cv GUI include file
+
+#endif
 
 #include <iostream>		// standard C++ I/O
 #include <string>		// standard C++ I/O
