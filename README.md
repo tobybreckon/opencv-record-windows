@@ -49,11 +49,11 @@ Defaults: output video is 1280x720 max. - see code below to change
 
 ### Example usage:
 
-'''
+```
 See test.cpp:
 #include "opencv_record_output.h"
 #include "bilateral_filter.cpp"
-'''
+```
 
 which inserts this header before a standard [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) from this repository - [OpenCV C++ examples](https://github.com/tobybreckon/cpp-examples-ipcv).
 
