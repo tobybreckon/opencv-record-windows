@@ -11,7 +11,7 @@ Works with OpenCV C++ or (older) C style interface
 
 // automatically records highGUI windows defined with either of:
 // namedWindow(), cvNamedWindow() provided all such windows
-// are undated in the "main loop" via imshow() or cvShowImage().
+// are updated in the "main loop" via imshow() or cvShowImage().
 
 // Use: just include this header before all your code **including** the opencv
 // header (#include <cv.h>, #include <opencv2/...>) etc.
@@ -45,6 +45,19 @@ Defaults: output video is 1280x720 max. - see code below to change
 ```
 ---
 
+### Example usage:
+
+'''
+See test.cpp:
+#include "opencv_record_output.h"
+#include "bilateral_filter.cpp"
+'''
+
+which inserts this header before a standard [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) from this repository - [OpenCV C++ examples](https://github.com/tobybreckon/cpp-examples-ipcv).
+
+---
+### Background:
+
 Originally developed to generate the video examples for the ebook version of:
 
  [Dictionary of Computer Vision and Image Processing](http://dx.doi.org/10.1002/9781119286462) (R.B. Fisher, T.P. Breckon, K. Dawson-Howe, A. Fitzgibbon, C. Robertson, E. Trucco, C.K.I. Williams), Wiley, 2014.
@@ -55,11 +68,19 @@ and  [OpenCV C examples](https://github.com/tobybreckon/c-examples-ipcv) reposit
 
 ---
 
+### Example:
+
 Click for YouTube video example recorded from this example applied to the [bilateral filter example](https://github.com/tobybreckon/opencv-record-windows/blob/master/bilateral_filter.cpp) shown on an old mobile phone video of an evening crossing of Hong Kong harbour [[Fisher / Breckon et al., 2014](http://dx.doi.org/10.1002/9781119286462)].
 
 [![Example Video](http://img.youtube.com/vi/dFWRmQP9Y-A/0.jpg)](http://www.youtube.com/watch?v=dFWRmQP9Y-A)
 
-Reference is:
+---
+
+### Reference:
+
+[Dictionary of Computer Vision and Image Processing](http://dx.doi.org/10.1002/9781119286462) (R.B. Fisher, T.P. Breckon, K. Dawson-Howe, A. Fitzgibbon, C. Robertson, E. Trucco, C.K.I. Williams), Wiley, 2014.
+[[Google Books](http://books.google.co.uk/books?id=TaEQAgAAQBAJ&lpg=PP1&dq=isbn%3A1118706811&pg=PP1v=onepage&q&f=false)] [[doi](http://dx.doi.org/10.1002/9781119286462)]
+
 ```
 @Book{fisher14dictionary,
   author =   {Fisher, R.B. and Breckon, T.P.
@@ -73,7 +94,17 @@ Reference is:
   doi = 	 {10.1002/9781119286462}
 }
 ```
+---
 
+### How to build and run example:
+
+```
+git clone https://github.com/tobybreckon/opencv-record-windows.git
+cd opencv-record-windows
+cmake .
+make
+./test
+```
 ---
 
 If you find any bugs report them to me (or much better still - submit a pull request, please) - toby.breckon@durham.ac.uk
