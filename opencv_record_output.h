@@ -38,7 +38,7 @@ Defaults: output video is 1280x720 max. - see defs. in code below to change
 
 */
 
-#include "cv.h"         // open cv general include file
+#define CV_MAJOR_VERSION 3
 
 #if (CV_MAJOR_VERSION > 2)
 
@@ -51,7 +51,7 @@ Defaults: output video is 1280x720 max. - see defs. in code below to change
 #else
 
   // includes for older OpenCV 2.4.x
-
+  #include "cv.h"         // open cv general include file
   #include "highgui.h"    // open cv GUI include file
 
 #endif
@@ -264,10 +264,10 @@ public:
             // define video output object
             // N.B. passing the fps as an int seems to give more accurate reporting of fps in the file
 
-            videoOutput = new VideoWriter(outputFileName, CV_FOURCC('D','I','V','X'),
+            videoOutput = new VideoWriter(outputFileName, cv::VideoWriter::fourcc('D','I','V','X'),
                                           (int) cvFloor(fps), tmpSize, isColour);
 
-            // try also CV_FOURCC('I','Y','U','V') in above for uncompressed
+            // try also FOURCC('I','Y','U','V') in above for uncompressed
 
         }
 
@@ -303,7 +303,7 @@ public:
 
                 if ((isColour) && (frameOutput.channels() != 3) )
                 {
-                    cvtColor(frameOutput, frameOutput, CV_GRAY2BGR);
+                    cvtColor(frameOutput, frameOutput, COLOR_GRAY2BGR);
                 }
 
 
@@ -314,7 +314,7 @@ public:
 
                     if ((isColour) && (((it->second).frame).channels() != 3) )
                     {
-                        cvtColor((it->second).frame, (it->second).frame, CV_GRAY2BGR);
+                        cvtColor((it->second).frame, (it->second).frame, COLOR_GRAY2BGR);
                     }
 
                     // join frames
@@ -331,7 +331,7 @@ public:
 
                 if (scaleDownFactor < 1.0)
                 {
-                    resize(frameOutput, frameOutput, Size(), scaleDownFactor, scaleDownFactor, CV_INTER_AREA );
+                    resize(frameOutput, frameOutput, Size(), scaleDownFactor, scaleDownFactor, INTER_AREA );
                 }
 
                 #if ORFHWH_VIDEO_TRACE

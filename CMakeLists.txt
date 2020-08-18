@@ -6,7 +6,7 @@ cmake_policy(SET CMP0037 OLD)
 # linux specific stuff
 
 IF ( UNIX )
-   set( CMAKE_PREFIX_PATH "/opt/opencv" )
+   set( CMAKE_PREFIX_PATH "/opt/opencv/lib64/cmake/opencv4/" ) # path to OpenCV cmake config
    set_property(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS TRUE)
    MESSAGE( "LINUX CONFIG" )
 ENDIF ( UNIX )
@@ -19,8 +19,10 @@ IF ( WIN32 )
    MESSAGE( "WINDOWS CONFIG" )
 ENDIF ( WIN32 )
 SET_PROPERTY(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS TRUE)
-find_package( OpenCV REQUIRED )
 
 project(test)
+
+find_package( OpenCV REQUIRED )
+
 add_executable(test test.cpp)
 target_link_libraries( test ${OpenCV_LIBS} )
